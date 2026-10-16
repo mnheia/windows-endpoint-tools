@@ -1,4 +1,14 @@
-# Configure Large Send Offload on selected network adapters.
+<#
+.SYNOPSIS
+    Configure Large Send Offload on selected network adapters.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-endpoint-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [Parameter(Mandatory)][string[]]$Name,

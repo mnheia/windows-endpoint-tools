@@ -1,4 +1,14 @@
-# Configure Windows TCP receive-window auto-tuning.
+<#
+.SYNOPSIS
+    Configure Windows TCP receive-window auto-tuning.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-endpoint-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [ValidateSet('normal','disabled','restricted','highlyrestricted')][string]$Level = 'normal',

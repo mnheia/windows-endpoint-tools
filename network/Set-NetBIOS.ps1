@@ -1,4 +1,14 @@
-# Enable, disable, or use DHCP defaults for NetBIOS over TCP/IP.
+<#
+.SYNOPSIS
+    Enable, disable, or use DHCP defaults for NetBIOS over TCP/IP.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-endpoint-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [Parameter(Mandatory)][ValidateSet('Enable','Disable','DHCP')][string]$Mode,
