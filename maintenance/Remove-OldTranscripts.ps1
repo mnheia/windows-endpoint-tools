@@ -1,4 +1,14 @@
-# Remove old PowerShell transcript files in a designated transcript directory.
+<#
+.SYNOPSIS
+    Remove old PowerShell transcript files in a designated transcript directory.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-endpoint-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [Parameter(Mandatory)][string]$Path,

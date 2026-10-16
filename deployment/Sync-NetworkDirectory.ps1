@@ -1,4 +1,14 @@
-# Copy new and newer files with robocopy; do not delete destination files.
+<#
+.SYNOPSIS
+    Copy new and newer files with robocopy; do not delete destination files.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-endpoint-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [Parameter(Mandatory)][string]$Source,
