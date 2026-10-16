@@ -1,4 +1,14 @@
-# Set regional preferences for current user (Slovenia, Germany or Belgium).
+<#
+.SYNOPSIS
+    Set regional preferences for current user (Slovenia, Germany or Belgium).
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-endpoint-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [Parameter(Mandatory)][ValidateSet('SI','DE','BE')][string]$Region,

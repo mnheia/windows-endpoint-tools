@@ -1,4 +1,14 @@
-# Enable Windows DriverFrameworks operational event logging.
+<#
+.SYNOPSIS
+    Enable Windows DriverFrameworks operational event logging.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-endpoint-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param()
 $log = 'Microsoft-Windows-DriverFrameworks-UserMode/Operational'

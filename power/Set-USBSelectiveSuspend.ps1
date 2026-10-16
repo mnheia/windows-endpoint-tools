@@ -1,4 +1,14 @@
-# Enable or disable USB selective suspend for the active power plan.
+<#
+.SYNOPSIS
+    Enable or disable USB selective suspend for the active power plan.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-endpoint-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param([ValidateSet('Enable','Disable')][string]$Mode = 'Disable')
 $group = '2a737441-1930-4402-8d77-b2bebba308a3'
